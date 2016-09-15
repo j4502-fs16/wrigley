@@ -2,9 +2,11 @@ p {
 color: red;
 color: white;
 font-family:Georgia, Arial, sans-serif;
-size: 15px;
 font-weight: lighter;
-margin: 15 auto;
+margin:0 auto;
+padding-top: 15px;
+font-size: 20px;
+
 
 }
 
@@ -27,10 +29,16 @@ img {
 }
 
 #nav li {
+  float: left;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 33%;
+  padding-bottom: 15px;
 }
+
 #nav2 a:link {
-  color: green;
+  color: yellow;
   }
 
 #nav2 a:visited {
@@ -43,13 +51,16 @@ img {
   color:limegreen;
 }
 #nav2 li {
-  list-style-type:none;
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
 }
 
 h1{
   font-family: Georgia, "Times New Roman", serif;
   font-weight: bold;
-  
 
 }
 
@@ -57,10 +68,12 @@ body{
 color: orange;
   background-color:grey;
   margin: auto;
+
 }
 
 img {
   border-style: none;
+  padding-top: 15px;
 }
 
 #container{
