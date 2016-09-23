@@ -1,3 +1,8 @@
+html {
+	font-size: 100%;
+}
+
+
 p {
 color: red;
 color: white;
@@ -5,7 +10,9 @@ font-family:Georgia, Arial, sans-serif;
 font-weight: lighter;
 margin:0 auto;
 padding-top: 15px;
-font-size: 20px;
+font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
+font-size: 1rem;
+line-height: 1.35rem;
 
 
 }
@@ -14,24 +21,24 @@ img {
   display: block;
 }
 
-#nav a:link {
-  color: yellow;
+#nav a:visited {
+  color: #9D9254;
   display: block;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   padding: 4px;
-  font-family: helvetica, arial, sans-serif;
+font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 }
 
-#nav a:visited {
-  color: pink;
+#nav a:link {
+  color: #58E5EB;
   display: block;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   padding: 4px;
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 }
 #nav a:hover {
   color: hotpink;
@@ -40,16 +47,16 @@ img {
   text-align: center;
   text-decoration: none;
   padding: 4px;
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 }
 #nav a:active {
-  color: green;
+  color: #6B3158;
   display: block;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   padding: 4px;
-  font-family: helvetica, arial, sans-serif;
+font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 }
 
 #nav li {
@@ -57,28 +64,29 @@ img {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 33%;
+  width: 33.33%;
   padding-bottom: 15px;
-}
-
-#nav2 a:link {
-  color: yellow;
-  display: block;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  padding: 4px;
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 }
 
 #nav2 a:visited {
-  color: pink;
+  color: #9D9254;
   display: block;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   padding: 4px;
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
+}
+
+#nav2 a:link {
+  color: #58E5EB;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 4px;
+  font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
   }
 #nav2 a:hover {
   color: hotpink;
@@ -87,16 +95,16 @@ img {
   text-align: center;
   text-decoration: none;
   padding: 4px;
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 }
 #nav2 a:active {
-  color: green;
+  color: #6B3158;
   display: block;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   padding: 4px;
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 }
 #nav2 li {
   float: left;
@@ -104,18 +112,40 @@ img {
   margin: 0;
   padding: 0;
   width: 25%;
+  font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 }
 
-h1{
-  font-family: Georgia, "Times New Roman", serif;
+h1, h2, h3, h4, h5, h6{
+  font-family: 'PT Serif', 'Merriweather', Georgia, serif;
+  font-weight: 400;
   font-weight: bold;
+  color:orange;
+
+}
+
+#header{
+  font-family: 'PT Serif', 'Merriweather', Georgia, serif;
+  font-weight: bold;
+  color: orange;
+  padding-top: 10px;
+  font-size: 1.5rem
+
+
+}
+#header2{
+  font-family: 'PT Serif', 'Merriweather', Georgia, serif;
+  font-weight: bold;
+  color: orange;
+  padding-top: 10px;
+  font-size: 1.5rem
 
 }
 
 body{
 color: orange;
-  background-color:grey;
+  background-color:#0B686B;
   margin: auto;
+  font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 
 }
 
@@ -127,8 +157,8 @@ img {
 #container{
   width: 95%;
   background-color: white;
-  margin:0 auto;
-  background-color: grey;
+  margin: 0 auto;
+  background-color: #0B686B;
   font-weight: lighter;
 
 }
