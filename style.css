@@ -11,9 +11,7 @@ html {
   display: flex;
   flex-flow: column;
   text-align: center;
-
 }
-
 
 .nav a {
   text-decoration: none;
@@ -28,11 +26,10 @@ html {
 
 .wrapper {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   font-weight: bold;
-	height: 300px;
+	/*height: 300px;*/
 }
-
 
 p {
 color: red;
@@ -44,8 +41,6 @@ padding-top: 15px;
 font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 font-size: 1rem;
 line-height: 1.35rem;
-
-
 }
 
 img {
@@ -86,14 +81,11 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
-
-
 body{
 color: orange;
   background-color:#0B686B;
   margin: auto;
   font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
-
 }
 
 img {
@@ -175,43 +167,65 @@ img {
 		padding-top: 20px;
 	}
 
+	.wrapper {
+		flex-flow: row;
+		flex-wrap: wrap;
+	}
 
-.wrapper {
-	height: 300px;
-	padding-left: 10px;
-	flex-flow: row;
-}
+	.aside {
+		flex: 1 10%;
+	}
 
+	.main {
+		flex: 2 30%;
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+	}
 
-.main {
-	    flex: 3 1px;
-	    display: flex;
-			flex-grow: 1;
-			padding-left: 10px;
-	  }
+	.footer {
+		flex: 1 auto;
+	}
 
-.aside-1 {
-	order: 1;
-	flex-grow: 2;
-	display: flex wrap;
-}
-
-.main {
-	order: 2;
-}
-
-.aside-2 {
-	order: 3;
-	flex-grow: 2;
-}
-
-.footer {
-	order: 4;
-}
-		img {
-		  border-style: none;
-		  padding-top: 15px;
-			margin-right: 10px;
-		}
+	img {
+		width: 50%;
+		float: left;
+		margin-right: 1.5em;
+	}
 
   }
+
+
+/* Old styles that I removed =================================
+
+
+	.main {
+		    flex: 3 1px;
+		    display: flex; removing this fixed photo
+			flex-grow: 1;
+			padding-left: 10px;
+		  }
+
+	.aside-1 {
+		order: 1;
+		flex-grow: 2;
+		display: flex wrap;
+	}
+
+	.main {
+		order: 2;
+	}
+
+	.aside-2 {
+		order: 3;
+		flex-grow: 2;
+	}
+
+	.footer {
+		order: 4;
+	}
+
+	img {
+	  border-style: none;
+	  padding-top: 15px;
+		margin-right: 10px;
+	}*/
