@@ -59,11 +59,11 @@ a:link {
 
   font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 }
-a:hover {
+/*a:hover {
   color: hotpink;
 
   font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
-}
+}*/
  a:active {
   color: #6B3158;
 
@@ -165,8 +165,11 @@ img {
 	.nav a {
 		border: none;
 		padding-top: 20px;
-	}
 
+	}
+	.nav a:hover {
+    background: white;
+  }
 	.wrapper {
 		flex-flow: row;
 		flex-wrap: wrap;
@@ -184,6 +187,9 @@ img {
 
 	.footer {
 		flex: 1 auto;
+		padding-top: 50px;
+		
+
 	}
 
 	img {
