@@ -110,7 +110,9 @@ img {
 
 }
 
+@media (min-width:400px max-width: 599 px){
 
+}
 
 
 @media (min-width: 600px) {
@@ -120,18 +122,25 @@ img {
 	}
 	.nav a {
 		border: none;
+		padding-top: 20px;
 	}
 
+.wrapper {
+	height: 300px;
+
+}
   .aside{
     flex: 1 auto;}
 
-	.main {
-	flex: 3 0px;
-	display: flex;
-}
+.main {
+	    flex: 3 0px;
+	    display: flex;
+			width: 33%
+	  }
 
 .aside-1 {
 	order: 1;
+	width: 33%
 }
 
 .main {
@@ -141,6 +150,7 @@ img {
 
 .aside-2 {
 	order: 3;
+	width: 33%
 }
 
 .footer {
