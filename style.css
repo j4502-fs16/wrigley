@@ -3,6 +3,37 @@ html {
 }
 
 
+.nav {
+  list-style: none;
+  margin: 0;
+  padding:0;
+	background: tan;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+
+}
+
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: white;
+  border-top: 1px solid #6B3158;;
+  border-bottom: 1px solid white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+	height: 300px;
+}
+
+
 p {
 color: red;
 color: white;
@@ -21,53 +52,30 @@ img {
   display: block;
 }
 
-#nav a:visited {
+ a:visited {
   color: #9D9254;
-  display: block;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  padding: 4px;
+	color: #6B3158;
+
 font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 }
 
-#nav a:link {
+a:link {
   color: #58E5EB;
-  display: block;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  padding: 4px;
+
   font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 }
-#nav a:hover {
+a:hover {
   color: hotpink;
-  display: block;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  padding: 4px;
+
   font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 }
-#nav a:active {
+ a:active {
   color: #6B3158;
-  display: block;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  padding: 4px;
+
 font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 }
 
-#nav li {
-  float: left;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 33.33%;
-  padding-bottom: 15px;
-  font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
-}
+
 
 h1, h2, h3, h4, h5, h6{
   font-family: 'PT Serif', 'Merriweather', Georgia, serif;
@@ -90,9 +98,10 @@ color: orange;
 img {
   border-style: none;
   padding-top: 15px;
+	width: 100%;
 }
 
-#container{
+.container{
   width: 95%;
   background-color: white;
   margin: 0 auto;
@@ -102,9 +111,45 @@ img {
 }
 
 
-@media (min-width: 800px) {
-  .navigation {
+
+
+@media (min-width: 600px) {
+  .nav {
     flex-flow: row;
     justify-content: flex-end;
+	}
+	.nav a {
+		border: none;
+	}
+
+  .aside{
+    flex: 1 auto;}
+
+	.main {
+	flex: 3 0px;
+	display: flex;
+}
+
+.aside-1 {
+	order: 1;
+}
+
+.main {
+	order: 2;
+
+}
+
+.aside-2 {
+	order: 3;
+}
+
+.footer {
+	order: 4;
+}
+		img {
+		  border-style: none;
+		  padding-top: 15px;
+			width: 50%;
+		}
 
   }
