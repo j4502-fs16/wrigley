@@ -132,6 +132,10 @@ img {
 	}
 
 }
+.menu-trigger {
+	display: none;
+}
+
 
 @media screen and (min-width: 900px) {
 
@@ -159,6 +163,9 @@ img {
 			padding-top: 50px;
 
 		}
+		.menu-trigger {
+	display: none;
+}
   }
 
 
