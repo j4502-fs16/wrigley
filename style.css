@@ -45,8 +45,8 @@ max-width: 800px;
 }
 
 
-/*
- a:visited {
+
+ /*a:visited {
   color: #9D9254;
 	color: #6B3158;
 
@@ -55,6 +55,8 @@ font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 
 a:link {
   color: #58E5EB;
+	color: #6B3158;
+
 
   font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
 }
