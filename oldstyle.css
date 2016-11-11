@@ -1,0 +1,201 @@
+html {
+	font-size: 100%;
+}
+
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding:0;
+	background: tan;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: white;
+  border-top: 1px solid #6B3158;;
+  border-bottom: 1px solid white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+	/*height: 300px;*/
+}
+
+p {
+color: red;
+color: white;
+font-family:Georgia, Arial, sans-serif;
+font-weight: lighter;
+margin:0 auto;
+padding-top: 15px;
+font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
+font-size: 1rem;
+line-height: 1.35rem;
+max-width: 800px;
+}
+
+
+
+ /*a:visited {
+  color: #9D9254;
+	color: #6B3158;
+
+font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
+}*/
+
+a:link {
+  color: #58E5EB;
+	color: #6B3158;
+
+
+  font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
+}
+/*a:hover {
+  color: hotpink;
+
+  font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
+}*/
+ a:active {
+  color: #6B3158;
+
+font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'PT Serif', 'Merriweather', Georgia, serif;
+  font-weight: 400;
+  font-weight: bold;
+  color:orange;
+	padding: 10px;
+
+}
+
+body{
+	color: white;
+  background-color:#0B686B;
+  margin: auto;
+  font-family: 'PT Sans', helvetica, "Source Sans Pro", sans-serif;
+}
+
+img {
+  border-style: none;
+  padding-top: 15px;
+	width: 100%;
+}
+
+.container {
+  width: 95%;
+  background-color: white;
+  margin: 0 auto;
+  background-color: #0B686B;
+  font-weight: lighter;
+
+}
+
+.main {
+	display: none;
+}
+
+@media screen and (min-width: 600px) {
+
+.main {
+		display: block;
+	}
+
+
+	.nav {
+		flex-flow: row wrap;
+		justify-content: flex-end;
+	}
+
+	.nav a {
+		border: none;
+		padding-top: 20px;
+
+	}
+	.nav a:hover {
+		background: white;
+	}
+	.wrapper {
+		flex-flow: row;
+		flex-wrap: wrap;
+	}
+
+}
+
+
+
+@media screen and (min-width: 900px) {
+
+		.aside {
+			flex: 1 10%;
+		}
+
+		.main {
+			flex: 2 30%;
+			margin-left: 1.5em;
+			margin-right: 1.5em;
+		}
+		img {
+			width: 50%;
+			float: left;
+			margin-right: 1.5em;
+		}
+		.nav ul {
+		  display: flex;
+		  flex-flow: column;
+		  margin: 0;
+		}
+		.footer {
+			flex: 1 auto;
+			padding-top: 50px;
+
+		}
+
+  }
+
+
+/* Old styles that I removed =================================
+
+
+	.main {
+		    flex: 3 1px;
+		    display: flex; removing this fixed photo
+			flex-grow: 1;
+			padding-left: 10px;
+		  }
+
+	.aside-1 {
+		order: 1;
+		flex-grow: 2;
+		display: flex wrap;
+	}
+
+	.main {
+		order: 2;
+	}
+
+	.aside-2 {
+		order: 3;
+		flex-grow: 2;
+	}
+
+	.footer {
+		order: 4;
+	}
+
+	img {
+	  border-style: none;
+	  padding-top: 15px;
+		margin-right: 10px;
+	}*/
